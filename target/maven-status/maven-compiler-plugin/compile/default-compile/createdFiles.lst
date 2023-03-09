@@ -1,0 +1,7 @@
+graphql/project/Query.class
+graphql/project/utils/AlertUtils.class
+graphql/project/App.class
+graphql/project/domain/Anime.class
+graphql/project/domain/Anime$AnimeBuilder.class
+graphql/project/utils/Resources.class
+graphql/project/controller/AnimeController.class

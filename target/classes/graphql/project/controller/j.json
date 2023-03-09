@@ -1,0 +1,176 @@
+{
+    "data": {
+        "Page": {
+            "media": [
+                {
+                    "id": 1,
+                    "seasonYear": 1998,
+                    "title": {
+                        "romaji": "Cowboy Bebop",
+                        "english": "Cowboy Bebop",
+                        "native": "カウボーイビバップ"
+                    },
+                    "genres": [
+                        "Action",
+                        "Adventure",
+                        "Drama",
+                        "Sci-Fi"
+                    ],
+                    "meanScore": 86,
+                    "popularity": 299478
+                },
+                {
+                    "id": 5,
+                    "seasonYear": 2001,
+                    "title": {
+                        "romaji": "Cowboy Bebop: Tengoku no Tobira",
+                        "english": "Cowboy Bebop: The Movie - Knockin' on Heaven's Door",
+                        "native": "カウボーイビバップ天国の扉"
+                    },
+                    "genres": [
+                        "Action",
+                        "Drama",
+                        "Mystery",
+                        "Sci-Fi"
+                    ],
+                    "meanScore": 82,
+                    "popularity": 55714
+                },
+                {
+                    "id": 6,
+                    "seasonYear": 1998,
+                    "title": {
+                        "romaji": "TRIGUN",
+                        "english": "Trigun",
+                        "native": "TRIGUN"
+                    },
+                    "genres": [
+                        "Action",
+                        "Adventure",
+                        "Comedy",
+                        "Drama",
+                        "Sci-Fi"
+                    ],
+                    "meanScore": 79,
+                    "popularity": 102654
+                },
+                {
+                    "id": 7,
+                    "seasonYear": 2002,
+                    "title": {
+                        "romaji": "Witch Hunter ROBIN",
+                        "english": "Witch Hunter ROBIN",
+                        "native": "Witch Hunter ROBIN"
+                    },
+                    "genres": [
+                        "Action",
+                        "Drama",
+                        "Mystery",
+                        "Supernatural"
+                    ],
+                    "meanScore": 68,
+                    "popularity": 13894
+                },
+                {
+                    "id": 8,
+                    "seasonYear": 2004,
+                    "title": {
+                        "romaji": "Bouken Ou Beet",
+                        "english": "Beet the Vandel Buster",
+                        "native": "冒険�Exception in Application start method��ビィト"
+                    },
+                    "genres": [
+                        "Adventure",
+                        "Fantasy",
+                        "Supernatural"
+                    ],
+                    "meanScore": 63,
+                    "popularity": 1948
+                },
+                {
+                    "id": 15,
+                    "seasonYear": 2005,
+                    "title": {
+                        "romaji": "Eyeshield 21",
+                        "english": "Eyeshield 21",
+                        "native": "アイシールド21"
+                    },
+                    "genres": [
+                        "Action",
+                        "Comedy",
+                        "Sports"
+                    ],
+                    "meanScore": 76,
+                    "popularity": 23482
+                },
+                {
+                    "id": 16,
+                    "seasonYear": 2005,
+                    "title": {
+                        "romaji": "Hachimitsu to Clover",
+                        "english": "Honey and Clover",
+                        "native": "ハチミツとクローバー"
+                    },
+                    "genres": [
+                        "Comedy",
+                        "Drama",
+                        "Romance",
+                        "Slice of Life"
+                    ],
+                    "meanScore": 77,
+                    "popularity": 41415
+                },
+                {
+                    "id": 17,
+                    "seasonYear": 2002,
+                    "title": {
+                        "romaji": "Hungry Heart: Wild Striker",
+                        "english": null,
+                        "native": "ハングリーハート Wild Striker"
+                    },
+                    "genres": [
+                        "Comedy",
+                        "Slice of Life",
+                        "Sports"
+                    ],
+                    "meanScore": 71,
+                    "popularity": 3260
+                },
+                {
+                    "id": 18,
+                    "seasonYear": 2004,
+                    "title": {
+                        "romaji": "Initial D FOURTH STAGE",
+                        "english": "Initial D 4th Stage",
+                        "native": "頭文字〈イニシャル〉D FOURTH STAGE"
+                    },
+                    "genres": [
+                        "Action",
+                        "Drama",
+                        "Sports"
+                    ],
+                    "meanScore": 79,
+                    "popularity": 28716
+                },
+                {
+                    "id": 19,
+                    "seasonYear": 2004,
+                    "title": {
+                        "romaji": "MONSTER",
+                        "english": "Monster",
+                        "native": "MONSTER"
+                    },
+                    "genres": [
+                        "Drama",
+                        "Horror",
+                        "Mystery",
+                        "Psychological",
+                        "Thriller"
+                    ],
+                    "meanScore": 88,
+                    "popularity": 177856
+                }
+            ]
+        }
+    }
+}

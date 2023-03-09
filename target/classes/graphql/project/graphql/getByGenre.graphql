@@ -1,0 +1,16 @@
+query GetAnimeByGenre($genre: String!, $page: Int!, $perPage: Int!) {
+  Page(page: $page, perPage: $perPage) {
+    media(type: ANIME, genre: $genre) {
+      id
+      seasonYear
+      title {
+        romaji
+        english
+        native
+      }
+      genres
+      meanScore
+      popularity
+    }
+  }
+}

@@ -1,0 +1,29 @@
+query GetAnime($name: String, $genre_in: [String], $startDate: FuzzyDateInt, $page: Int, $perPage: Int) {
+    Page(page: $page, perPage: $perPage) {
+        media(search: $name, genre_in: $genre_in, startDate: $startDate,  type: ANIME, sort: POPULARITY_DESC) {
+            id
+            startDate {
+              year
+            }
+            title {
+              romaji
+              english
+              native
+            }
+            genres
+            meanScore
+            popularity
+            coverImage {
+              extraLarge
+            }
+            bannerImage
+              }
+              pageInfo {
+              total
+              currentPage
+              lastPage
+              hasNextPage
+              perPage
+            }
+    }
+}

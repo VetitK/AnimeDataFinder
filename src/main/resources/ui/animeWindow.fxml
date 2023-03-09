@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="711.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="database">
+         <content>
+            <BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
+               <left>
+                  <VBox prefHeight="545.0" prefWidth="151.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Anime Name" />
+                        <TextField fx:id="titleTextField" />
+                        <Label text="Genre" />
+                        <TextField fx:id="genresTextField" />
+                        <Label layoutX="15.0" layoutY="53.0" text="Year" />
+                        <TextField fx:id="yearTextField" layoutX="15.0" layoutY="70.0" />
+                        <Label layoutX="15.0" layoutY="98.0" text="Number of Queries" />
+                        <TextField fx:id="numQueries" layoutX="15.0" layoutY="116.0" text="50" />
+                        <Label text="Max: 50 per Page">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="38.0" minHeight="20.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="33.0" minHeight="30.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#searchAnime" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #405cf5; -fx-background-radius: 6; -fx-cursor: hand;" text="Search" textFill="WHITE" />
+                              <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#resetTable" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: #405cf5; -fx-background-radius: 6; -fx-cursor: hand;" text="Reset" textFill="WHITE" GridPane.columnIndex="1" />
+                              <Button fx:id="clearBtn" layoutX="80.0" layoutY="12.0" mnemonicParsing="false" onAction="#clearForm" prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #405cf5; -fx-background-radius: 6; -fx-cursor: hand;" text="Clear" textFill="WHITE" GridPane.rowIndex="1" />
+                           </children>
+                           <padding>
+                              <Insets top="16.0" />
+                           </padding>
+                        </GridPane>
+                        <Separator prefWidth="200.0">
+                           <padding>
+                              <Insets top="16.0" />
+                           </padding>
+                        </Separator>
+                        <Label text="Pagition" />
+                        <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="53.0" prefWidth="140.0" style="-fx-spacing: 2;">
+                           <children>
+                              <Button fx:id="leftPagnition" mnemonicParsing="false" onAction="#previousPage" style="-fx-background-color: #1b1c1c; -fx-background-radius: 15; -fx-cursor: hand;" text="&lt;" textFill="WHITE" />
+                              <Label fx:id="currentPage" text="0" />
+                              <Label text="/" />
+                              <Label fx:id="totalPages" text="0" />
+                              <Button fx:id="rightPagnition" mnemonicParsing="false" onAction="#nextPage" style="-fx-background-color: #1b1c1c; -fx-background-radius: 15; -fx-cursor: hand;" text="&gt;" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </VBox>
+               </left>
+               <center>
+                  <TableView fx:id="animeTableView" onMouseClicked="#animeTableMouseClicked" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Label fx:id="statusLabel" text="Label" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
