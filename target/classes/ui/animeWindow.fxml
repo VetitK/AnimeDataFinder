@@ -23,7 +23,7 @@
          <content>
             <BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
                <left>
-                  <VBox prefHeight="545.0" prefWidth="151.0" BorderPane.alignment="CENTER">
+                  <VBox minWidth="-Infinity" prefHeight="545.0" prefWidth="240.0" BorderPane.alignment="CENTER">
                      <children>
                         <Label text="Anime Name" />
                         <TextField fx:id="titleTextField" />
@@ -61,7 +61,7 @@
                               <Insets top="16.0" />
                            </padding>
                         </Separator>
-                        <Label text="Pagition" />
+                        <Label text="Pagnition" />
                         <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="53.0" prefWidth="140.0" style="-fx-spacing: 2;">
                            <children>
                               <Button fx:id="leftPagnition" mnemonicParsing="false" onAction="#previousPage" style="-fx-background-color: #1b1c1c; -fx-background-radius: 15; -fx-cursor: hand;" text="&lt;" textFill="WHITE" />
@@ -71,7 +71,7 @@
                               <Button fx:id="rightPagnition" mnemonicParsing="false" onAction="#nextPage" style="-fx-background-color: #1b1c1c; -fx-background-radius: 15; -fx-cursor: hand;" text="&gt;" textFill="WHITE" />
                            </children>
                         </HBox>
-                        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imageView" fitHeight="180.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
                      </children>
                      <padding>
                         <Insets left="5.0" right="5.0" />

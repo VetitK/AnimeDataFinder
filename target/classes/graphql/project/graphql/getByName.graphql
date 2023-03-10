@@ -1,6 +1,6 @@
-query GetAnime($name: String, $genre_in: [String], $startDate: FuzzyDateInt, $page: Int, $perPage: Int) {
+query GetAnime($name: String, $genre_in: [String], $startDate: FuzzyDateInt, $endDate: FuzzyDateInt, $page: Int, $perPage: Int) {
     Page(page: $page, perPage: $perPage) {
-        media(search: $name, genre_in: $genre_in, startDate: $startDate,  type: ANIME, sort: POPULARITY_DESC) {
+        media(search: $name, genre_in: $genre_in, startDate_greater: $startDate, endDate_lesser: $endDate,  type: ANIME, sort: POPULARITY_DESC) {
             id
             startDate {
               year

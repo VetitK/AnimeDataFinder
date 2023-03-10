@@ -119,8 +119,10 @@ public class Query {
 
     public static JsonObject getAnimeByName(String name, String genre, String year, int page, int perPage) {
 
-        String formatYear = year + "0000";
-        Integer yearInt = Integer.parseInt(formatYear);
+        String formatStartYear = year + "0101";
+        String formatEndYear = year + "1231";
+        Integer yearInt = Integer.parseInt(formatStartYear);
+        Integer yearEndInt = Integer.parseInt(formatEndYear);
         // String formatYearEnd = year + "1231";
         String queryString = getQueryString("src/main/java/graphql/project/graphql/getByName.graphql");
 
@@ -133,6 +135,7 @@ public class Query {
         }
         if (!year.isEmpty()) {
             variables.put("startDate", yearInt);
+            variables.put("endDate", yearEndInt);
         }
         variables.put("page", page);
         variables.put("perPage", perPage);

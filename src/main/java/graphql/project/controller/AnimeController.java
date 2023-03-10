@@ -146,7 +146,7 @@ public class AnimeController implements Initializable{
             animeObj.setGenres(stringList);
             // animeObj.setYear(anime.getAsJsonObject().get("seasonYear").getAsInt()); // TODO: Fix this
             // Handle null
-            if (!anime.getAsJsonObject().get("startDate").isJsonNull()) {
+            if (!anime.getAsJsonObject().get("startDate").getAsJsonObject().get("year").isJsonNull()) {
                 animeObj.setYear(anime.getAsJsonObject().get("startDate").getAsJsonObject().get("year").getAsInt());
             } else {
                 animeObj.setYear(0);
